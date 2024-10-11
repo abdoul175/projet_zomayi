@@ -24,11 +24,17 @@ const menuData: Menu[] = [
         path: "/blog",
         newTab: false,
       },
+      {
+        id: 14,
+        title: "¿Cómo formar parte de nosotros?",
+        path: "/blog",
+        newTab: false,
+      },
     ],
   },
   {
     id: 2,
-    title: "quién soy",
+    title: "Directorio",
     newTab: false,
     submenu: [
       {
@@ -56,6 +62,51 @@ const menuData: Menu[] = [
         newTab: false,
       },
     ],
+  },
+  {
+    id: 3,
+    title: "Nuestros grupos",
+    newTab: false,
+    submenu: [
+      {
+        id: 31,
+        title: "Grupo de Lectura",
+        path: "/blog",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Colabora",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Colabora",
+        path: "/blog",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Actividades y eventos",
+    newTab: false,
+    submenu: [
+      {
+        id: 51,
+        title: "Actividades y eventos",
+        path: "/blog",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Togo",
+    path: "/blog",
+    newTab: false,
   },
   // {
   //   id: 2,
