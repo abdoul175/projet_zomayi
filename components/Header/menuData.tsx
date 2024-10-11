@@ -9,25 +9,25 @@ const menuData: Menu[] = [
       {
         id: 11,
         title: "Sobre nosotros",
-        path: "/about",
+        path: "/",
         newTab: false,
       },
       {
         id: 12,
         title: "Historia de la Asociación",
-        path: "/contact",
+        path: "/",
         newTab: false,
       },
       {
         id: 13,
         title: "El español en Togo",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
       {
         id: 14,
         title: "¿Cómo formar parte de nosotros?",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],
@@ -40,25 +40,25 @@ const menuData: Menu[] = [
       {
         id: 21,
         title: "Comité Ejecutivo",
-        path: "/about",
+        path: "/",
         newTab: false,
       },
       {
         id: 22,
         title: "Comité Ampliado",
-        path: "/contact",
+        path: "/",
         newTab: false,
       },
       {
         id: 23,
         title: "Responsables de Grupos",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
       {
         id: 24,
         title: "Representantes en el Exterior",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],
@@ -71,7 +71,7 @@ const menuData: Menu[] = [
       {
         id: 31,
         title: "Grupo de Lectura",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],
@@ -84,7 +84,7 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Colabora",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],
@@ -97,7 +97,7 @@ const menuData: Menu[] = [
       {
         id: 51,
         title: "Actividades y eventos",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],
@@ -105,7 +105,7 @@ const menuData: Menu[] = [
   {
     id: 6,
     title: "Togo",
-    path: "/blog",
+    path: "/",
     newTab: false,
   },
   // {
