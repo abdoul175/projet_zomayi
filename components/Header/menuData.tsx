@@ -9,25 +9,25 @@ const menuData: Menu[] = [
       {
         id: 11,
         title: "Sobre nosotros",
-        path: "/",
+        path: "/component1",
         newTab: false,
       },
       {
         id: 12,
         title: "Historia de la Asociación",
-        path: "/",
+        path: "/component4",
         newTab: false,
       },
       {
         id: 13,
         title: "El español en Togo",
-        path: "/",
+        path: "/component2",
         newTab: false,
       },
       {
         id: 14,
         title: "¿Cómo formar parte de nosotros?",
-        path: "/",
+        path: "/component3",
         newTab: false,
       },
     ],
@@ -40,7 +40,7 @@ const menuData: Menu[] = [
       {
         id: 21,
         title: "Comité Ejecutivo",
-        path: "/",
+        path: "/component5",
         newTab: false,
       },
       {
@@ -58,7 +58,7 @@ const menuData: Menu[] = [
       {
         id: 24,
         title: "Representantes en el Exterior",
-        path: "/",
+        path: "/component6",
         newTab: false,
       },
     ],
@@ -108,11 +108,5 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-  // {
-  //   id: 2,
-  //   title: "About",
-  //   path: "/about",
-  //   newTab: false,
-  // },
 ];
 export default menuData;

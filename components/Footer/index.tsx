@@ -1,406 +1,279 @@
-import Image from "next/image";
-import Link from "next/link";
+import "./index.css";
 
 const Footer = () => {
   return (
     <>
-      <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
-        data-wow-delay=".1s"
-      >
+      <footer className="relative z-10 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="images/logo/logo-2.svg"
+          <div className="flex flex-wrap gap-14 lg:flex-row lg:items-center lg:justify-around">
+            <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
+              <div className="mb-10 w-full">
+                <a href="/" className="mb-6 inline-block">
+                  {/* <img
+                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
+                    className="max-w-full dark:hidden"
                   />
-                  <Image
-                    src="images/logo/logo.svg"
+                  <img
+                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
                     alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                    className="hidden max-w-full dark:block"
+                  /> */}
+                  <h1 className="text-shadow text-4xl font-extrabold text-dark">
+                    Club Cervantes Togo
+                  </h1>
+                </a>
+                <p className="dark:text-dark-6 mb-7 text-base text-body-color">
+                  Contáctenos a través de estos detalles para obtener más
+                  información.
                 </p>
-                <div className="flex items-center">
+                <p className="mb-5 flex items-center text-sm font-medium text-dark dark:text-white">
+                  <span className="mr-3 text-primary">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_941_15626)">
+                        <path
+                          d="M15.1875 19.4688C14.3438 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84377 16.375 5.75002 14.2813C3.65627 12.1875 2.03127 9.84377 1.18752 7.68752C0.250019 5.37502 0.343769 3.46877 1.43752 2.40627C1.46877 2.37502 1.53127 2.34377 1.56252 2.31252L4.18752 0.750025C4.84377 0.375025 5.68752 0.562525 6.12502 1.18752L7.96877 3.93753C8.40627 4.59378 8.21877 5.46877 7.59377 5.90627L6.46877 6.68752C7.28127 8.00002 9.59377 11.2188 13.2813 13.5313L13.9688 12.5313C14.5 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.625 18.5 17.5938 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37502 3.46878C1.78127 4.12503 1.81252 5.46877 2.50002 7.18752C3.28127 9.15627 4.78127 11.3125 6.75002 13.2813C8.68752 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1875 15.0938 12.5625 14.6875C8.62502 12.25 6.18752 8.84377 5.31252 7.46877C4.90627 6.81252 5.06252 5.96878 5.68752 5.53128L6.81252 4.75002V4.71878L4.96877 1.96877C4.96877 1.93752 4.93752 1.93752 4.90627 1.96877L2.37502 3.46878Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M18.3125 8.90633C17.9375 8.90633 17.6563 8.62508 17.625 8.25008C17.375 5.09383 14.7813 2.56258 11.5938 2.34383C11.2188 2.31258 10.9063 2.00008 10.9375 1.59383C10.9688 1.21883 11.2813 0.906333 11.6875 0.937583C15.5625 1.18758 18.7188 4.25008 19.0313 8.12508C19.0625 8.50008 18.7813 8.84383 18.375 8.87508C18.375 8.90633 18.3438 8.90633 18.3125 8.90633Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M15.2187 9.18755C14.875 9.18755 14.5625 8.93755 14.5312 8.56255C14.3437 6.87505 13.0312 5.56255 11.3437 5.3438C10.9687 5.31255 10.6875 4.93755 10.7187 4.56255C10.75 4.18755 11.125 3.9063 11.5 3.93755C13.8437 4.2188 15.6562 6.0313 15.9375 8.37505C15.9687 8.75005 15.7187 9.0938 15.3125 9.1563C15.25 9.18755 15.2187 9.18755 15.2187 9.18755Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_941_15626">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span>(+228) 71 65 24 23</span>
+                </p>
+                <p className="flex items-center text-sm font-medium text-dark dark:text-white">
+                  <span className="mr-3 text-primary">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M28 4.7998H3.99998C2.29998 4.7998 0.849976 6.1998 0.849976 7.9498V24.1498C0.849976 25.8498 2.24998 27.2998 3.99998 27.2998H28C29.7 27.2998 31.15 25.8998 31.15 24.1498V7.8998C31.15 6.1998 29.7 4.7998 28 4.7998ZM28 7.0498C28.05 7.0498 28.1 7.0498 28.15 7.0498L16 14.8498L3.84998 7.0498C3.89998 7.0498 3.94998 7.0498 3.99998 7.0498H28ZM28 24.9498H3.99998C3.49998 24.9498 3.09998 24.5498 3.09998 24.0498V9.2498L14.8 16.7498C15.15 16.9998 15.55 17.0998 15.95 17.0998C16.35 17.0998 16.75 16.9998 17.1 16.7498L28.8 9.2498V24.0998C28.9 24.5998 28.5 24.9498 28 24.9498Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <a href="mailto:clubcervantesuniversidad@gmail.com">
+                      clubcervantesuniversidad@gmail.com
+                    </a>
+                  </span>
+                </p>
+              </div>
+            </div>
+            {/* 
+            <LinkGroup header="Resources">
+              <NavLink link="/#" label="SaaS Development" />
+              <NavLink link="/#" label="Our Products" />
+              <NavLink link="/#" label="User Flow" />
+              <NavLink link="/#" label="User Strategy" />
+            </LinkGroup>
+            <LinkGroup header="Company">
+              <NavLink link="/#" label="About TailGrids" />
+              <NavLink link="/#" label="Contact & Support" />
+              <NavLink link="/#" label="Success History" />
+              <NavLink link="/#" label="Setting & Privacy" />
+            </LinkGroup>
+            <LinkGroup header="Quick Links">
+              <NavLink link="/#" label="Premium Support" />
+              <NavLink link="/#" label="Our Services" />
+              <NavLink link="/#" label="Know Our Team" />
+              <NavLink link="/#" label="Download App" />
+            </LinkGroup> */}
+
+            <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+              <div className="mb-10 w-full">
+                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                  Síguenos en
+                </h4>
+                <div className="mb-6 flex flex-wrap items-center gap-2">
                   <a
-                    href="/"
-                    aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    href="https://maps.app.goo.gl/eotms9QuN8UyM1iJ9"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
-                      width="9"
-                      height="18"
-                      viewBox="0 0 9 18"
-                      className="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 25 30"
+                      width="30"
+                      height="30"
+                      stroke="currentColor"
+                      className="size-6"
                     >
-                      <path d="M8.13643 7H6.78036H6.29605V6.43548V4.68548V4.12097H6.78036H7.79741C8.06378 4.12097 8.28172 3.89516 8.28172 3.55645V0.564516C8.28172 0.254032 8.088 0 7.79741 0H6.02968C4.11665 0 2.78479 1.58064 2.78479 3.92339V6.37903V6.94355H2.30048H0.65382C0.314802 6.94355 0 7.25403 0 7.70564V9.7379C0 10.1331 0.266371 10.5 0.65382 10.5H2.25205H2.73636V11.0645V16.7379C2.73636 17.1331 3.00273 17.5 3.39018 17.5H5.66644C5.81174 17.5 5.93281 17.4153 6.02968 17.3024C6.12654 17.1895 6.19919 16.9919 6.19919 16.8226V11.0927V10.5282H6.70771H7.79741C8.11222 10.5282 8.35437 10.3024 8.4028 9.96371V9.93548V9.90726L8.74182 7.95968C8.76604 7.7621 8.74182 7.53629 8.59653 7.31048C8.54809 7.16935 8.33016 7.02823 8.13643 7Z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                      />
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    href="https://www.facebook.com/share/BiiEcCgJGtqk7EgD/"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
-                      width="19"
-                      height="14"
-                      viewBox="0 0 19 14"
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
                       className="fill-current"
                     >
-                      <path d="M16.3024 2.26027L17.375 1.0274C17.6855 0.693493 17.7702 0.436644 17.7984 0.308219C16.9516 0.770548 16.1613 0.924658 15.6532 0.924658H15.4556L15.3427 0.821918C14.6653 0.282534 13.8185 0 12.9153 0C10.9395 0 9.3871 1.48973 9.3871 3.21062C9.3871 3.31336 9.3871 3.46747 9.41532 3.57021L9.5 4.0839L8.90726 4.05822C5.29435 3.95548 2.33065 1.13014 1.85081 0.642123C1.06048 1.92637 1.5121 3.15925 1.99194 3.92979L2.95161 5.36815L1.42742 4.5976C1.45565 5.67637 1.90726 6.52397 2.78226 7.14041L3.54435 7.65411L2.78226 7.93665C3.2621 9.24658 4.33468 9.78596 5.125 9.99144L6.16935 10.2483L5.18145 10.8647C3.60081 11.8921 1.625 11.8151 0.75 11.738C2.52823 12.8682 4.64516 13.125 6.1129 13.125C7.21371 13.125 8.03226 13.0223 8.22984 12.9452C16.1331 11.25 16.5 4.82877 16.5 3.54452V3.36473L16.6694 3.26199C17.629 2.44007 18.0242 2.00342 18.25 1.74658C18.1653 1.77226 18.0524 1.82363 17.9395 1.84932L16.3024 2.26027Z" />
+                      <path d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    href="https://x.com/club_cervantes?s=09"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
-                      width="18"
-                      height="14"
-                      viewBox="0 0 18 14"
+                      width="16"
+                      height="12"
+                      viewBox="0 0 16 12"
                       className="fill-current"
                     >
-                      <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
+                      <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
                     </svg>
                   </a>
                   <a
-                    href="/"
-                    aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    href="javascript:void(0)"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                  >
+                    <svg
+                      width="16"
+                      height="12"
+                      viewBox="0 0 16 12"
+                      className="fill-current"
+                    >
+                      <path d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/clubcervantes/profilecard/?igsh=MWlqeXVlNGdreGdwZA=="
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
+                      height="17"
+                      viewBox="0 0 50 50"
                       className="fill-current"
                     >
-                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
+                      <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@clubcervantestogo?_t=8qJxDBjYz4K&_r=1"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                  >
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 50 50"
+                      className="fill-current"
+                    >
+                      <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    className="border-stroke dark:border-dark-3 mr-3 flex h-8 w-8 items-center justify-center rounded-full border text-dark hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                  >
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 50 50"
+                      className="fill-current"
+                    >
+                      <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
                     </svg>
                   </a>
                 </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Blog{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Pricing{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      About{" "}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      TOS{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Privacy Policy{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Refund Policy{" "}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Open Support Ticket{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      Terms of Use{" "}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      {" "}
-                      About{" "}
-                    </a>
-                  </li>
-                </ul>
+                <p className="dark:text-dark-6 text-base text-body-color">
+                  &copy; 2024 Club Cervantes Togo
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
-          <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and <a href="https://nextjstemplates.com" rel="nofollow noopener">Next.js Templates</a>
-            </p>
-          </div>
-        </div>
-        <div className="absolute right-0 top-14 z-[-1]">
-          <svg
-            width="55"
-            height="99"
-            viewBox="0 0 55 99"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
-            <mask
-              id="mask0_94:899"
-              style={{ maskType: "alpha" }}
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="99"
-              height="99"
+        <div>
+          <span className="absolute bottom-0 left-0 z-[-1]">
+            <svg
+              width={217}
+              height={229}
+              viewBox="0 0 217 229"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="#4A6CF7"
+              <path
+                d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
+                fill="url(#paint0_linear_1179_5)"
               />
-            </mask>
-            <g mask="url(#mask0_94:899)">
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="url(#paint0_radial_94:899)"
+              <defs>
+                <linearGradient
+                  id="paint0_linear_1179_5"
+                  x1="76.5"
+                  y1={281}
+                  x2="76.5"
+                  y2="1.22829e-05"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#3056D3" stopOpacity="0.08" />
+                  <stop offset={1} stopColor="#C4C4C4" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span className="absolute right-10 top-10 z-[-1]">
+            <svg
+              width={75}
+              height={75}
+              viewBox="0 0 75 75"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
+                fill="url(#paint0_linear_1179_4)"
               />
-              <g opacity="0.8" filter="url(#filter0_f_94:899)">
-                <circle cx="53.8676" cy="26.2061" r="20.3824" fill="white" />
-              </g>
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_94:899"
-                x="12.4852"
-                y="-15.1763"
-                width="82.7646"
-                height="82.7646"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="10.5"
-                  result="effect1_foregroundBlur_94:899"
-                />
-              </filter>
-              <radialGradient
-                id="paint0_radial_94:899"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(49.5 49.5) rotate(90) scale(53.1397)"
-              >
-                <stop stopOpacity="0.47" />
-                <stop offset="1" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
-        <div className="absolute left-0 bottom-24 z-[-1]">
-          <svg
-            width="79"
-            height="94"
-            viewBox="0 0 79 94"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              opacity="0.3"
-              x="-41"
-              y="26.9426"
-              width="66.6675"
-              height="66.6675"
-              transform="rotate(-22.9007 -41 26.9426)"
-              fill="url(#paint0_linear_94:889)"
-            />
-            <rect
-              x="-41"
-              y="26.9426"
-              width="66.6675"
-              height="66.6675"
-              transform="rotate(-22.9007 -41 26.9426)"
-              stroke="url(#paint1_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <path
-              opacity="0.3"
-              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L77.1885 68.2073L50.5215 7.42229Z"
-              fill="url(#paint2_linear_94:889)"
-            />
-            <path
-              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L76.7963 68.2073L50.5215 7.42229Z"
-              stroke="url(#paint3_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <path
-              opacity="0.3"
-              d="M17.9721 93.3057L-14.9695 88.2076L46.2077 62.325L77.1885 68.2074L17.9721 93.3057Z"
-              fill="url(#paint4_linear_94:889)"
-            />
-            <path
-              d="M17.972 93.3057L-14.1852 88.2076L46.2077 62.325L77.1884 68.2074L17.972 93.3057Z"
-              stroke="url(#paint5_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_94:889"
-                x1="-41"
-                y1="21.8445"
-                x2="36.9671"
-                y2="59.8878"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_94:889"
-                x1="25.6675"
-                y1="95.9631"
-                x2="-42.9608"
-                y2="20.668"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_94:889"
-                x1="20.325"
-                y1="-3.98039"
-                x2="90.6248"
-                y2="25.1062"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_94:889"
-                x1="18.3642"
-                y1="-1.59742"
-                x2="113.9"
-                y2="80.6826"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_94:889"
-                x1="61.1098"
-                y1="62.3249"
-                x2="-8.82468"
-                y2="58.2156"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_94:889"
-                x1="65.4236"
-                y1="65.0701"
-                x2="24.0178"
-                y2="41.6598"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
-              </linearGradient>
-            </defs>
-          </svg>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_1179_4"
+                  x1="-1.63917e-06"
+                  y1="37.5"
+                  x2={75}
+                  y2="37.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#13C296" stopOpacity="0.31" />
+                  <stop offset={1} stopColor="#C4C4C4" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
         </div>
       </footer>
     </>
@@ -408,3 +281,31 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const LinkGroup = ({ children, header }) => {
+  return (
+    <>
+      <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+        <div className="mb-10 w-full">
+          <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+            {header}
+          </h4>
+          <ul className="space-y-3">{children}</ul>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const NavLink = ({ link, label }) => {
+  return (
+    <li>
+      <a
+        href={link}
+        className="dark:text-dark-6 inline-block text-base leading-loose text-body-color hover:text-primary"
+      >
+        {label}
+      </a>
+    </li>
+  );
+};
