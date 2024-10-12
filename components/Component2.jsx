@@ -29,15 +29,15 @@ const Component2 = () => {
               <p className="mb-8 text-justify text-lg">
                 Una cosa que hay que subrayar es que la mayoría de los
                 estudiantes que optan por el español, se dejan seducir porque
-                "suena bonito", es una lengua musical, y es muy conocida
-                actualmente por el éxito de las canciones de telenovelas
-                latinoamericanos. No obstante, también hay quienes lo escogen
-                por la facilidad de estudiar una lengua próxima al francés y,
-                por lo tanto, más fácil que el alemán, hecho que creen sobre
-                todo que les simplificará el aprendizaje. Además, cabe describir
-                otro grupo de alumnos que ven el idioma como una formalidad
-                necesaria para aumentar las posibilidades de obtener un visado e
-                ir a España u otro país de habla hispana.
+                &quot;suena bonito&quot;, es una lengua musical, y es muy
+                conocida actualmente por el éxito de las canciones de
+                telenovelas latinoamericanos. No obstante, también hay quienes
+                lo escogen por la facilidad de estudiar una lengua próxima al
+                francés y, por lo tanto, más fácil que el alemán, hecho que
+                creen sobre todo que les simplificará el aprendizaje. Además,
+                cabe describir otro grupo de alumnos que ven el idioma como una
+                formalidad necesaria para aumentar las posibilidades de obtener
+                un visado e ir a España u otro país de habla hispana.
               </p>
 
               <p className="mb-8 text-justify text-lg">
