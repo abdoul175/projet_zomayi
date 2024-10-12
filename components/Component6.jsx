@@ -62,7 +62,7 @@ const TeamCard = ({ imageSrc, name, country, email = "", telephone = "" }) => {
                 <div className="flex h-full w-full items-center justify-center gap-3">
                   <div className="flex items-center justify-center overflow-hidden rounded text-primary sm:h-[70px] sm:max-w-[70px]">
                     <Tooltip
-                      className="p-3 text-lg"
+                      className="bg-dark p-3 text-lg"
                       content={telephone}
                       animate={{
                         mount: { scale: 1, y: 0 },
@@ -100,7 +100,7 @@ const TeamCard = ({ imageSrc, name, country, email = "", telephone = "" }) => {
                     </Tooltip>
                   </div>
                   <Tooltip
-                    className="p-3 text-lg"
+                    className="bg-dark p-3 text-lg"
                     content={email}
                     animate={{
                       mount: { scale: 1, y: 0 },
