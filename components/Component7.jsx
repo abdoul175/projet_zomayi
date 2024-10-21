@@ -2,7 +2,7 @@
 
 import { Tooltip } from "@material-tailwind/react";
 
-const Component6 = () => {
+const Component7 = () => {
   return (
     <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
@@ -10,7 +10,7 @@ const Component6 = () => {
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center">
               <span className="mb-2 block text-3xl font-bold text-primary">
-                Representantes en el Exterior
+                Comité Ampliado
               </span>
             </div>
           </div>
@@ -18,23 +18,65 @@ const Component6 = () => {
 
         <div className="-mx-4 flex flex-wrap justify-center">
           <TeamCard
-            name="Aluma Serrano López"
-            imageSrc="/images/testimonials/Aluma.jpg"
-            country="México"
-            email="aserranosumling@gmail.com"
-            telephone="+1 (408) 656-5170"
+            name="GNASSIBOU T. M. Ives"
+            role="Encargado de protocolos y reglas"
+            imageSrc="/images/hero/hero2.jpg"
+            email="ivesgnassibou1@gmail.com"
+            telephone="+228 93 59 23 08"
           />
+
           <TeamCard
-            name="María del Carmen Méndez Santos"
-            imageSrc="/images/testimonials/Maria.jpg"
-            country="España"
-            email="cursoselevigo2010@gmail.com"
+            name="BLEWOUSSI Appolinaire"
+            role="Asistente del presidente y encargado de comunicación"
+            imageSrc="/images/hero/hero2.jpg"
+            email="hermannblewoussi8@gmail.com"
+            telephone="+228 79 77 57 27"
+          />
+
+          <TeamCard
+            name="BASSABI Résikathe"
+            role="Consejera"
+            imageSrc="/images/hero/hero2.jpg"
+            email="kathebassabi@gmail.com"
+            telephone="+228 91 26 96 52"
+          />
+
+          <TeamCard
+            name="GBODJINOU Kossi Francisco"
+            role="Community Manager"
+            imageSrc="/images/hero/hero2.jpg"
+            email="franciscokgoff@gmail.com"
+            telephone="+228 96 91 66 64"
+          />
+
+          <TeamCard
+            name="KOUDJO Kodjo Guy"
+            role="Encargado de cárteles y Tarjeta de membresía"
+            imageSrc="/images/hero/hero2.jpg"
+            email="kodjoguykoudjo@gmail.com"
+            telephone="+228 99 01 45 17"
+          />
+
+          <TeamCard
+            name=""
+            role="Encargado del sitio web"
+            imageSrc="/images/hero/hero2.jpg"
+            email=""
             telephone=""
           />
+
           <TeamCard
-            name="AZIAGBA Koamivi Mawulolo"
+            name="KPANDJI Célestin"
+            role="Encargado de la adhesión"
             imageSrc="/images/hero/hero2.jpg"
-            country="France"
+            email="celestinkpandji@gmail.com"
+            telephone="+228 90 76 97 30"
+          />
+
+          <TeamCard
+            name="KPANDJI Célestin"
+            role="Delegado(a) General Departamento Estudios Ibéricos"
+            imageSrc="/images/hero/hero2.jpg"
             email=""
             telephone=""
           />
@@ -44,9 +86,9 @@ const Component6 = () => {
   );
 };
 
-export default Component6;
+export default Component7;
 
-const TeamCard = ({ imageSrc, name, country, email = "", telephone = "" }) => {
+const TeamCard = ({ imageSrc, name, role, email = "", telephone = "" }) => {
   return (
     <>
       <div className="w-full px-4 md:w-1/2 xl:w-1/4">
@@ -125,11 +167,13 @@ const TeamCard = ({ imageSrc, name, country, email = "", telephone = "" }) => {
             </div>
 
             <div className="absolute bottom-5 left-0 w-full text-center">
-              <div className="dark:bg-dark-2 relative mx-5 space-x-3 overflow-hidden rounded-lg bg-white px-3 py-5">
+              <div className="dark:bg-dark-2 relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5">
                 <h3 className="text-base font-semibold text-dark dark:text-white">
                   {name}
                 </h3>
-                <p className="py-2 text-sm text-dark">{country}</p>
+                <p className="dark:text-dark-6 text-md text-body-color">
+                  {role}
+                </p>
               </div>
             </div>
           </div>

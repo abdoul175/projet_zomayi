@@ -27,12 +27,12 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Component1 />
+      {/* <Component1 />
       <Component4 />
       <Component2 />
       <Component3 />
       <Component5 />
-      <Component6 />
+      <Component6 /> */}
       {/* <Features /> */}
       {/* <Video /> */}
       {/* <Brands /> */}

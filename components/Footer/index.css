@@ -1,3 +1,25 @@
 .text-shadow {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 990px) {
+  .footer {
+    flex-direction: column;
+    gap: 9px;
+    align-items: start;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .parent_footer {
+    padding: 10px 0;
+  }
+
+  .social_icons {
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+}

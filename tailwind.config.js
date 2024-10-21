@@ -42,7 +42,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/hero/img.png')",
+        "hero-pattern": "url('/images/hero/hero1.png')",
       },
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",

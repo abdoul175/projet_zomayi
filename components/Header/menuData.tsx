@@ -46,13 +46,13 @@ const menuData: Menu[] = [
       {
         id: 22,
         title: "Comité Ampliado",
-        path: "/",
+        path: "/component7",
         newTab: false,
       },
       {
         id: 23,
         title: "Responsables de Grupos",
-        path: "/",
+        path: "/component8",
         newTab: false,
       },
       {
@@ -70,7 +70,61 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 31,
-        title: "Grupo de Lectura",
+        title: "Grupo de Baile",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 32,
+        title: "Grupo de Fútbol",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 33,
+        title: "Grupo de Artes Escénicas",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 34,
+        title: "Grupo de Artes Culinarios",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 35,
+        title: "Grupo de Artes plásticos",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 36,
+        title: "Grupo de Turismo",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 37,
+        title: "Grupo de Teatro",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 38,
+        title: "Grupo de Periodismo y Interpretación",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 39,
+        title: "Grupo de Música",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 399,
+        title: "Portugués",
         path: "/",
         newTab: false,
       },
@@ -83,7 +137,25 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 41,
-        title: "Colabora",
+        title: "Proyectos",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Contáctanos",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Colaboradores y socios",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Donación",
         path: "/",
         newTab: false,
       },
@@ -96,7 +168,19 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 51,
-        title: "Actividades y eventos",
+        title: "Actividades",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 52,
+        title: "Eventos",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 53,
+        title: "Artículos",
         path: "/",
         newTab: false,
       },
@@ -105,8 +189,40 @@ const menuData: Menu[] = [
   {
     id: 6,
     title: "Togo",
-    path: "/",
     newTab: false,
+    submenu: [
+      {
+        id: 61,
+        title: "Conoce el país",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 62,
+        title: "Sitios turísticos",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 63,
+        title: "Fiestas tradicionales",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 64,
+        title: "Literatura",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 65,
+        title: "Civilización e historia",
+        path: "/",
+        newTab: false,
+      },
+    ],
   },
 ];
+
 export default menuData;

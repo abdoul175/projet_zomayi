@@ -19,11 +19,13 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>
+      <body className="maw-h-screen max-w-screen overflow-x-hidden">
         {/* <Providers> */}
         <Header />
         {children}
-        <Footer />
+        <div className="fixed bottom-0 left-0 right-0">
+          <Footer />
+        </div>
         <ScrollToTop />
         {/* </Providers> */}
       </body>
